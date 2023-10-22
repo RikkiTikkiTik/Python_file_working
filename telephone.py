@@ -32,7 +32,7 @@ def print_phone_book(gb_phone_book:list) -> None:
 def get_file_name() -> str:
     return input('Введите имя файла: ')
 
-def create_from_data(gb_phone_book: list,file_name:str,delimiter:str ) -> list:
+def create_from_data(gb_phone_book: list, file_name:str, delimiter:str ) -> list:
     path_sourse= os.path.join ('.',file_name)
     with open(path_sourse,'r', encoding='utf-8') as sourse:
         for line in sourse:
